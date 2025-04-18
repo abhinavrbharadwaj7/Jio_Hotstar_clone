@@ -34,7 +34,7 @@ function Live() {
             fontFamily: "'Roboto Condensed', sans-serif"
           }}
         >
-          LIVE: TATA IPL 2024
+          LIVE: TATA IPL 2025
         </Typography>
         <StreamPlayer />
       </Box>

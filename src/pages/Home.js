@@ -46,7 +46,7 @@ function Home() {
               fontFamily: "'Roboto Condensed', sans-serif"
             }}
           >
-            TATA IPL 2024
+            TATA IPL 2025
           </Typography>
           <Typography
             variant="h5"
