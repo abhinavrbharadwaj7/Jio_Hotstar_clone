@@ -7,7 +7,7 @@ function Live() {
     <Box sx={{
       pt: 8,
       minHeight: '100vh',
-      background: 'linear-gradient(180deg, #0f1014 0%, #1a1c24 100%)'
+      background: 'linear-gradient(135deg, #1B0938 0%, #220C44 100%)'
     }}>
       <Box sx={{
         position: 'relative',
@@ -18,7 +18,7 @@ function Live() {
           left: 0,
           right: 0,
           height: '100px',
-          background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%)',
+          background: 'linear-gradient(180deg, rgba(27, 9, 56, 0.9) 0%, rgba(27, 9, 56, 0) 100%)',
           zIndex: 1
         }
       }}>
@@ -27,13 +27,14 @@ function Live() {
           sx={{
             position: 'relative',
             zIndex: 2,
-            color: '#00b9f5',
+            color: '#FF0B7F',
             textAlign: 'center',
             py: 2,
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            fontFamily: "'Roboto Condensed', sans-serif"
           }}
         >
-          Watch Live IPL Match
+          LIVE: TATA IPL 2024
         </Typography>
         <StreamPlayer />
       </Box>

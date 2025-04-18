@@ -20,7 +20,7 @@ function Home() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(180deg, #0f1014 0%, #1a1c24 100%)',
+        background: 'linear-gradient(135deg, #1B0938 0%, #220C44 100%)',
         pt: 8
       }}
     >
@@ -31,20 +31,8 @@ function Home() {
             p: 4,
             borderRadius: '20px',
             position: 'relative',
-            overflow: 'hidden',
-            '&::before': {
-              content: '""',
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background: 'linear-gradient(45deg, #00b9f5, #2c5cd1, #00b9f5)',
-              backgroundSize: '200% 200%',
-              animation: `${gradientMove} 15s ease infinite`,
-              opacity: 0.1,
-              borderRadius: '20px',
-            }
+            backdropFilter: 'blur(10px)',
+            background: 'rgba(255, 255, 255, 0.05)',
           }}
         >
           <Typography
@@ -53,14 +41,12 @@ function Home() {
             sx={{
               fontWeight: 800,
               mb: 3,
-              background: 'linear-gradient(45deg, #00b9f5, #2c5cd1)',
-              backgroundClip: 'text',
-              textFillColor: 'transparent',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              color: '#FF0B7F',
+              textShadow: '0 0 20px rgba(255, 11, 127, 0.5)',
+              fontFamily: "'Roboto Condensed', sans-serif"
             }}
           >
-            Welcome to IPL Hotstar Clone
+            TATA IPL 2024
           </Typography>
           <Typography
             variant="h5"
@@ -83,17 +69,17 @@ function Home() {
             startIcon={<PlayCircleOutlineIcon />}
             sx={{
               mt: 4,
-              px: 4,
-              py: 1.5,
+              px: 6,
+              py: 2,
               fontSize: '1.2rem',
-              background: 'linear-gradient(45deg, #00b9f5 30%, #2c5cd1 90%)',
+              backgroundColor: '#FF0B7F',
               borderRadius: '30px',
               textTransform: 'none',
-              boxShadow: '0 3px 15px rgba(0,185,245,0.3)',
-              transition: 'all 0.3s ease',
+              fontWeight: 'bold',
               '&:hover': {
+                backgroundColor: '#D1095F',
                 transform: 'scale(1.05)',
-                boxShadow: '0 5px 25px rgba(0,185,245,0.5)',
+                boxShadow: '0 0 30px rgba(255, 11, 127, 0.4)',
               }
             }}
           >

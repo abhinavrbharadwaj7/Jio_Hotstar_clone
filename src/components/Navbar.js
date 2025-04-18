@@ -1,23 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
-import SportsCricketIcon from '@mui/icons-material/SportsCricket';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 
 function Navbar() {
   return (
     <AppBar position="fixed" sx={{ 
-      background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%)',
+      background: 'linear-gradient(to bottom, #1B0938 0%, rgba(27, 9, 56, 0.8) 100%)',
       boxShadow: 'none',
-      backdropFilter: 'blur(5px)'
     }}>
       <Toolbar>
-        <SportsCricketIcon sx={{ color: '#00b9f5', marginRight: '10px', fontSize: '2rem' }} />
+        <LiveTvIcon sx={{ color: '#FF0B7F', marginRight: '10px', fontSize: '2rem' }} />
         <Typography variant="h5" sx={{ 
           flexGrow: 1, 
           fontWeight: 'bold',
-          color: '#00b9f5'
+          color: '#FF0B7F',
+          fontFamily: "'Roboto Condensed', sans-serif"
         }}>
-          Disney+ Hotstar
+          JIO IPL
         </Typography>
         <Box sx={{ '& button': { mx: 1 } }}>
           <Button 
@@ -25,7 +25,7 @@ function Navbar() {
             to="/"
             sx={{ 
               color: 'white',
-              '&:hover': { color: '#00b9f5' }
+              '&:hover': { color: '#FF0B7F' }
             }}
           >
             Home
@@ -35,20 +35,14 @@ function Navbar() {
             to="/live"
             sx={{ 
               color: 'white',
-              '&:hover': { color: '#00b9f5' }
+              backgroundColor: 'rgba(255, 11, 127, 0.2)',
+              '&:hover': { 
+                backgroundColor: 'rgba(255, 11, 127, 0.3)',
+                color: '#FF0B7F'
+              }
             }}
           >
             Live
-          </Button>
-          <Button 
-            component={Link} 
-            to="/upcoming"
-            sx={{ 
-              color: 'white',
-              '&:hover': { color: '#00b9f5' }
-            }}
-          >
-            Schedule
           </Button>
         </Box>
       </Toolbar>
